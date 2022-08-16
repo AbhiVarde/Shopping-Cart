@@ -11,8 +11,8 @@ if(isset($_POST["add_to_cart"]))
 		{
 			$count = count($_SESSION["shopping_cart"]);
 			$item_array = array(
-				'item_id'			=>	$_GET["id"],
-				'item_name'			=>	$_POST["hidden_name"],
+				'item_id'		=>	$_GET["id"],
+				'item_name'		=>	$_POST["hidden_name"],
 				'item_price'		=>	$_POST["hidden_price"],
 				'item_quantity'		=>	$_POST["quantity"]
 			);
@@ -26,8 +26,8 @@ if(isset($_POST["add_to_cart"]))
 	else
 	{
 		$item_array = array(
-			'item_id'			=>	$_GET["id"],
-			'item_name'			=>	$_POST["hidden_name"],
+			'item_id'		=>	$_GET["id"],
+			'item_name'		=>	$_POST["hidden_name"],
 			'item_price'		=>	$_POST["hidden_price"],
 			'item_quantity'		=>	$_POST["quantity"]
 		);
